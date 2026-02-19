@@ -58,7 +58,11 @@
     .faq-item p { font-size: 0.95rem; color: #999; }
 
     /* Privacy */
-    .privacy p { font-size: 0.95rem; color: #999; }
+    .privacy p { font-size: 0.95rem; color: #999; margin-bottom: 1rem; }
+    .privacy h3 { font-size: 1rem; color: #fff; margin: 1.5rem 0 0.35rem; }
+    .privacy ul { font-size: 0.95rem; color: #999; margin: 0.5rem 0 0.5rem 1.5rem; }
+    .privacy li { margin-bottom: 0.3rem; }
+    .privacy .privacy-note { font-size: 0.85rem; color: #666; font-style: italic; margin-top: 1.5rem; }
 
     /* Footer */
     footer {
@@ -151,9 +155,43 @@
     </div>
   </section>
 
-  <section class="privacy">
-    <h2>Privacy</h2>
-    <p>Location data is used only to show nearby art and enable navigation. We do not sell or share your personal data. Photos you take are stored securely and associated with your account.</p>
+  <section class="privacy" id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>Artedex ("we", "our", "the app") respects your privacy. This policy explains what data we collect, why, and how we handle it.</p>
+
+    <h3>Data We Collect</h3>
+    <ul>
+      <li><strong>Location (always while using the app)</strong> &mdash; your GPS coordinates are used to show nearby art on the map and to enable AR-guided navigation to art pieces.</li>
+      <li><strong>Photos</strong> &mdash; when you photograph an art piece to add it to your collection, the photo is uploaded and stored on our servers (AWS S3).</li>
+      <li><strong>Email address &amp; username</strong> &mdash; collected during account registration for authentication and account identification.</li>
+    </ul>
+
+    <h3>How We Use Your Data</h3>
+    <ul>
+      <li>Location data is processed in real time to display nearby art and provide navigation. We do not build location history profiles.</li>
+      <li>Photos are associated with your collection and displayed only to you.</li>
+      <li>Your email is used for login, password resets, and essential service communications.</li>
+    </ul>
+
+    <h3>Data Storage &amp; Security</h3>
+    <p>Your data is stored on secured infrastructure (DigitalOcean for account data, AWS S3 for photos) with encrypted connections (HTTPS/TLS). Passwords are hashed and never stored in plain text.</p>
+
+    <h3>Third-Party Sharing</h3>
+    <p>We do not sell, rent, or share your personal data with any third parties. The app does not include third-party analytics, advertising SDKs, or tracking tools.</p>
+
+    <h3>Data Retention &amp; Deletion</h3>
+    <p>Your data is retained as long as your account is active. You may request deletion of your account and all associated data at any time by emailing <a href="mailto:artedex@ankycheng.com">artedex@ankycheng.com</a>. We will process deletion requests within 30 days.</p>
+
+    <h3>Children's Privacy</h3>
+    <p>Artedex is not directed at children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+    <h3>Changes to This Policy</h3>
+    <p>We may update this policy from time to time. Changes will be posted on this page with an updated effective date.</p>
+
+    <h3>Contact</h3>
+    <p>For privacy questions or data deletion requests, email <a href="mailto:artedex@ankycheng.com">artedex@ankycheng.com</a>.</p>
+
+    <p class="privacy-note">Effective date: February 18, 2026. Full policy also available at <a href="/privacy.html">/privacy.html</a>.</p>
   </section>
 
   <footer>
