@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Artedex turns your city into an open-air museum. Discover public art, navigate with AR, photograph your finds, and build a personal collection.">
+  <meta property="og:title" content="Artedex — Your city is a museum">
+  <meta property="og:description" content="Discover public art hiding in plain sight. Navigate with an AR compass, photograph your finds, and build a personal art collection.">
+  <meta property="og:type" content="website">
+  <title>Artedex — Your city is a museum</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0a; color: #e0e0e0; line-height: 1.6;
+    }
+    a { color: #d4a853; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    section { padding: 5rem 1.5rem; max-width: 720px; margin: 0 auto; }
+    h2 {
+      font-size: 1.4rem; font-weight: 600; color: #d4a853;
+      margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 0.08em;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 80vh; display: flex; flex-direction: column;
+      justify-content: center; text-align: center; padding-top: 6rem; padding-bottom: 4rem;
+    }
+    .hero h1 { font-size: 3.2rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+    .hero .tagline {
+      font-size: 1.25rem; color: #d4a853; margin: 0.75rem auto 2rem; font-style: italic;
+    }
+    .hero p { font-size: 1.05rem; color: #aaa; max-width: 520px; margin: 0 auto; }
+    /* <!-- TODO: Add App Store download link when published --> */
+
+    /* Features */
+    .features-grid { display: grid; gap: 2rem; }
+    .feature { display: flex; gap: 1rem; align-items: flex-start; }
+    .feature .icon { font-size: 1.8rem; flex-shrink: 0; line-height: 1; padding-top: 0.15rem; }
+    .feature h3 { font-size: 1.05rem; color: #fff; margin-bottom: 0.25rem; }
+    .feature p { font-size: 0.95rem; color: #999; }
+
+    /* Cities */
+    .cities-list {
+      display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; justify-content: center;
+    }
+    .city {
+      background: #161616; border: 1px solid #252525; border-radius: 8px;
+      padding: 0.6rem 1.2rem; font-size: 0.95rem; color: #ccc;
+    }
+    .cities-note { font-size: 0.9rem; color: #666; font-style: italic; }
+
+    /* FAQ */
+    .faq-item { margin-bottom: 1.8rem; }
+    .faq-item h3 { font-size: 1rem; color: #fff; margin-bottom: 0.35rem; }
+    .faq-item p { font-size: 0.95rem; color: #999; }
+
+    /* Privacy */
+    .privacy p { font-size: 0.95rem; color: #999; }
+
+    /* Footer */
+    footer {
+      text-align: center; padding: 3rem 1.5rem; font-size: 0.85rem;
+      color: #555; border-top: 1px solid #1a1a1a;
+    }
+
+    /* Dividers */
+    section + section { border-top: 1px solid #1a1a1a; }
+
+    @media (min-width: 640px) {
+      .hero h1 { font-size: 4rem; }
+      .features-grid { grid-template-columns: 1fr 1fr; }
+      section { padding: 5rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Artedex</h1>
+    <p class="tagline">Your city is a museum &mdash; start exploring.</p>
+    <p>Artedex turns your city into an open-air museum. Discover public art hiding in plain sight, navigate with an AR compass, photograph your finds, and build a personal art collection.</p>
+    <!-- TODO: Add App Store download button when published -->
+  </section>
+
+  <section>
+    <h2>Features</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <span class="icon">&#x1F5FA;&#xFE0F;</span>
+        <div>
+          <h3>Explore the Map</h3>
+          <p>Discover public art scattered across your city.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="icon">&#x1F9ED;</span>
+        <div>
+          <h3>Guided Navigation</h3>
+          <p>Follow a glowing beacon to walk right to each piece.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="icon">&#x1F4F8;</span>
+        <div>
+          <h3>Photograph &amp; Collect</h3>
+          <p>Snap a photo to add artworks to your collection.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="icon">&#x1F4D6;</span>
+        <div>
+          <h3>Art Journal</h3>
+          <p>Build a personal record of your discoveries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Available Cities</h2>
+    <div class="cities-list">
+      <span class="city">Taipei</span>
+      <span class="city">New York City</span>
+      <span class="city">Boston</span>
+      <span class="city">Seattle</span>
+      <span class="city">San Francisco</span>
+    </div>
+    <p class="cities-note">More cities coming soon.</p>
+  </section>
+
+  <section>
+    <h2>Support &amp; FAQ</h2>
+    <div class="faq-item">
+      <h3>How do I get started?</h3>
+      <p>Download Artedex, create an account, and allow location access. You'll see art pieces on the map around you.</p>
+    </div>
+    <div class="faq-item">
+      <h3>The map shows no art near me</h3>
+      <p>Artedex currently has the best coverage in Taipei, NYC, Boston, Seattle, and San Francisco. We're adding more cities regularly.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I collect a piece?</h3>
+      <p>Walk within range of an art piece, then open the camera to take a photo. The piece will be added to your collection.</p>
+    </div>
+    <div class="faq-item">
+      <h3>I found a bug or have feedback</h3>
+      <p>Email us at <a href="mailto:artedex@ankycheng.com">artedex@ankycheng.com</a>.</p>
+    </div>
+  </section>
+
+  <section class="privacy">
+    <h2>Privacy</h2>
+    <p>Location data is used only to show nearby art and enable navigation. We do not sell or share your personal data. Photos you take are stored securely and associated with your account.</p>
+  </section>
+
+  <footer>
+    &copy; 2026 An-Kai Cheng &middot; <a href="mailto:artedex@ankycheng.com">artedex@ankycheng.com</a>
+  </footer>
+
+</body>
+</html>
